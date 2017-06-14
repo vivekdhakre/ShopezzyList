@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 28 Mar, 2011 2:14:57 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class name="com.ahoy.ushop.core.domain.GroceryStoreBranchDo"  table="grocery_store_branch">
+     
+   <id name="groceryStoreBranchPkey" type="long">
+    <column name="grocery_store_branch_pkey"/>
+      <generator class="identity">
+        <param name="sequence">grocery_store_branch_pkey</param>
+      </generator>
+    </id>
+     <property name="groceryStoreBranchName" type="string">
+      <column name="grocery_store_branch_name" />
+    </property>
+    <property name="groceryStoreFkey" type="long">
+      <column name="grocery_store_fkey" />
+    </property>
+     <property name="groceryStoreBranchAddress" type="string">
+      <column name="grocery_store_branch_address" />
+    </property>
+     <property name="groceryStoreBranchCity" type="string">
+      <column name="grocery_store_branch_city" />
+    </property>
+     <property name="groceryStoreBranchLatLong" type="string">
+      <column name="grocery_store_branch_lat_long" />
+    </property>
+     <property name="groceryStoreBranchPinCode" type="string">
+      <column name="grocery_store_branch_pin_code" />
+    </property>
+    
+    
+     
+	
+   <property name="createdBy" type="string">
+      <column name="created_by" />
+    </property>
+	
+	<property name="createdOn" type="timestamp">
+      <column name="created_on" />
+    </property>
+	
+	<property name="updatedBy" type="string">
+      <column name="updated_by" />
+    </property>
+	
+	<property name="updatedOn" type="timestamp">
+      <column name="updated_on" />
+    </property>
+	
+  </class>
+</hibernate-mapping>

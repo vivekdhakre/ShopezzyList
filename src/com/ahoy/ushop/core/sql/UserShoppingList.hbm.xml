@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 28 Mar, 2011 2:14:57 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class name="com.ahoy.ushop.core.domain.UserShoppingListDo"  table="user_shopping_list">
+     
+   <id name="userShoppingListPkey" type="long">
+    <column name="user_shopping_list_pkey"/>
+      <generator class="identity">
+        <param name="sequence">user_shopping_list_pkey</param>
+      </generator>
+    </id>
+    
+    <property name="userFkey" type="long">
+      <column name="user_fkey" />
+    </property>
+     <property name="itemListJson" type="string">
+      <column name="item_list_json" />
+    </property>
+    
+	
+   <property name="createdBy" type="string">
+      <column name="created_by" />
+    </property>
+	
+	<property name="createdOn" type="timestamp">
+      <column name="created_on" />
+    </property>
+	
+	<property name="updatedBy" type="string">
+      <column name="updated_by" />
+    </property>
+	
+	<property name="updatedOn" type="timestamp">
+      <column name="updated_on" />
+    </property>
+	
+  </class>
+</hibernate-mapping>

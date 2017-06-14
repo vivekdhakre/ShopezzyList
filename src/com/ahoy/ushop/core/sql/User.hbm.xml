@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 28 Mar, 2011 2:14:57 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class name="com.ahoy.ushop.core.domain.UserDo"  table="user">
+     
+   <id name="userPkey" type="long">
+    <column name="user_pkey"/>
+      <generator class="identity">
+        <param name="sequence">user_pkey</param>
+      </generator>
+    </id> 
+    <property name="userAppId" type="string">
+      <column name="user_app_id" />
+    </property>
+    <property name="userName" type="string">
+      <column name="user_name" />
+    </property>
+     <property name="userEmail" type="string">
+      <column name="user_email" />
+    </property>
+     <property name="userMsisdn" type="string">
+      <column name="user_msisdn" />
+    </property>
+     <property name="isVeg" type="int">
+      <column name="is_veg" />
+    </property>
+     <property name="familyCategoryFkey" type="long">
+      <column name="family_category_fkey" />
+    </property>
+     <property name="age" type="int">
+      <column name="age" />
+    </property>
+     <property name="latLong" type="string">
+      <column name="lat_long" />
+    </property>
+     <property name="address" type="string">
+      <column name="address" />
+    </property>
+    <property name="pinCode" type="string">
+      <column name="pin_code" />
+    </property>
+    <property name="city" type="string">
+      <column name="city" />
+    </property>
+    
+     
+	
+   <property name="createdBy" type="string">
+      <column name="created_by" />
+    </property>
+	
+	<property name="createdOn" type="timestamp">
+      <column name="created_on" />
+    </property>
+	
+	<property name="updatedBy" type="string">
+      <column name="updated_by" />
+    </property>
+	
+	<property name="updatedOn" type="timestamp">
+      <column name="updated_on" />
+    </property>
+	
+  </class>
+</hibernate-mapping>

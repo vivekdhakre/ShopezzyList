@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 28 Mar, 2011 2:14:57 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class name="com.ahoy.ushop.core.domain.PostalCodeDo"  table="postal_code">
+     
+   <id name="postalCodePkey" type="long">
+    <column name="postal_code_pkey"/>
+      <generator class="identity">
+        <param name="sequence">postal_code_pkey</param>
+      </generator>
+    </id>
+    
+     <property name="countryCode" type="string">
+      <column name="country_code" />
+    </property>
+    <property name="postalCode" type="string">
+      <column name="postal_code" />
+    </property>
+    <property name="placeName" type="string">
+      <column name="place_name" />
+    </property>
+    <property name="adminName1" type="string">
+      <column name="admin_name1" />
+    </property>
+    
+    <property name="adminCode1" type="string">
+      <column name="admin_code1" />
+    </property>
+    <property name="adminName2" type="string">
+      <column name="admin_name2" />
+    </property>
+    <property name="adminCode2" type="string">
+      <column name="admin_code2" />
+    </property>
+    <property name="adminName3" type="string">
+      <column name="admin_name3" />
+    </property>
+    <property name="adminCode3" type="string">
+      <column name="admin_code3" />
+    </property>
+    <property name="latitude" type="string">
+      <column name="latitude" />
+    </property>
+    <property name="longitude" type="string">
+      <column name="longitude" />
+    </property>
+    <property name="accuracy" type="int">
+      <column name="accuracy" />
+    </property>
+    
+    
+   <property name="createdBy" type="string">
+      <column name="created_by" />
+    </property>
+	
+	<property name="createdOn" type="timestamp">
+      <column name="created_on" />
+    </property>
+	
+	<property name="updatedBy" type="string">
+      <column name="updated_by" />
+    </property>
+	
+	<property name="updatedOn" type="timestamp">
+      <column name="updated_on" />
+    </property>
+	
+  </class>
+</hibernate-mapping>
